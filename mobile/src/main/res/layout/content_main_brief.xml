@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aniruddhsingh.weathernow.main.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/tv_region"
+        style="@style/ThemeTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|start"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textsize_heading"
+        tools:text="Region" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/niv_weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_std_external"
+            android:minHeight="96dp"
+            android:minWidth="96dp"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher_bg" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/ThemeTextBrief"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|start"
+            android:textSize="@dimen/textsize_desc"
+            tools:text="Weather Decsription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_temp_cur"
+        style="@style/ThemeTextBrief"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_desc"
+        tools:text="Temprature: " />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        style="@style/ThemeTextBrief"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_desc"
+        tools:text="Humidity: " />
+
+</LinearLayout>
