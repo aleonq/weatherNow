@@ -23,4 +23,6 @@
     <string name="text_visibility">Visibility: %1$s</string>
     <string name="open_details">Open in browser</string>
     <string name="search_button_text">GO</string>
+    <string name="contact_email">aniruddhsingh@live.com</string>
+    <string name="work_in_progress">Feature under implementation</string>
 </resources>
