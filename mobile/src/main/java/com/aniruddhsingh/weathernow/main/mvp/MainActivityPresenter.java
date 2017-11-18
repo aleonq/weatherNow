@@ -24,11 +24,6 @@ public class MainActivityPresenter implements MainActivityMvp.Presenter {
     }
 
     @Override
-    public void viewStopped() {
-        model = null;
-    }
-
-    @Override
     public void requestWeatherData(String city) {
         view.showProgress();
         model.requestForData(city);

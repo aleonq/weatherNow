@@ -38,8 +38,6 @@ public interface MainActivityMvp {
     interface Presenter {
         void setView(View view);
 
-        void viewStopped();
-
         void requestWeatherData(String city);
 
         void notifyData(WeatherData weatherData, String city);

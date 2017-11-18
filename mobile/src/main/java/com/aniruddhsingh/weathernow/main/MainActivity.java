@@ -121,12 +121,6 @@ public class MainActivity extends AppCompatActivity
         presenter.requestWeatherData(city);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        presenter.viewStopped();
-    }
-
     @OnClick(R.id.btn_open_details)
     public void onClickedOpenDetails() {
         presenter.openDetailsButtonClicked();
